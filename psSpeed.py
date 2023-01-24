@@ -25,8 +25,8 @@ if sistema_operacional == 1:
     ipv6 = ""
 
     for line in process.stdout.readlines():
-        if "IPv6" in line.decode("utf-8"):
-            ipv6 = line.decode("utf-8").split(" : ")[1].strip()
+        if "IPv6" in line.decode("windows-1252"):
+            ipv6 = line.decode("windows-1252").split(" : ")[1].strip()
 
     # imprimir IPV4 e IPV6
     print("IPV4 deste host '{0}' é {1}".format(hostname, ipv4))
