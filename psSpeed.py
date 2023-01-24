@@ -9,7 +9,6 @@ print('2 - Linux')
 
 sistema_operacional = int(input('Digite o número: ')) 
 
-
 # Verificando a opção do usuário
 if sistema_operacional == 1:
     if os.name == 'posix':
