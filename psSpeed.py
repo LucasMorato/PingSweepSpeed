@@ -30,7 +30,7 @@ if sistema_operacional == 1:
         if "IPv6" in line.decode("utf-8"):
             ipv6 = line.decode("utf-8").split(" : ")[1].strip()
 
-    # imprimir IPV4, IPV6 e IP do Gateway
+    # imprimir IPV4 e IPV6
     print("IPV4 deste host '{0}' é {1}".format(hostname, ipv4))
     print("IPV6 deste host '{0}' é {1}".format(hostname, ipv6))
     
@@ -49,7 +49,7 @@ elif sistema_operacional == 2:
     # Converte o resultado para uma string
     output = output.decode()
 
-    # Procura pelo IPv4, IPv6 e Gateway
+    # Procura pelo IPv4 e IPv6
     ipv4 = output.split('inet')[1].split()[0]
     ipv6 = output.split('inet6')[1].split()[0]
 
