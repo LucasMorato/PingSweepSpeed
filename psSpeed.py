@@ -1,4 +1,3 @@
-# importar pacotes necessários
 import socket
 import subprocess
 import os
@@ -19,7 +18,7 @@ if sistema_operacional == 1:
     # definir nome do host
     hostname = socket.gethostname()
 
-    # definir endereços IPV4, IPV6
+    # definir endereços IPV4 e IPV6
     ipv4 = socket.gethostbyname(hostname)
     command = "ipconfig"
     process = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
